@@ -1,0 +1,19 @@
+{
+  "name": "17",
+  "version": "1.0.0",
+  "description": "exercise17.1\u001b[D\u001b[D\u001b[D\u001b[D-17.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "michalmatysiak"
+  },
+  "author": "michal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
