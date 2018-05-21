@@ -27,7 +27,7 @@ app.post('/updateNote/:note', function(req, res) {
 
 var server = app.listen(3000, function() {
 	console.log('Aplikacja nasłuchuje http://localhost:3000');
-})
+});
 
 
 
