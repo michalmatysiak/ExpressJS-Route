@@ -2,7 +2,6 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var app = express();
-var stringifyFile;
 
 app.use(bodyParser.json());
 
@@ -23,6 +22,7 @@ app.post('/updateNote/:note', function(req, res) {
 		jsonObject.notes.push(req.params.note);
 		var json = JSON.stringify(jsonObject);
 		fs.writeFile('./test.json', json, function(err) {
+			if (err) throw err;
 			res.send(jsonObject);
 		})
 		
