@@ -9,7 +9,6 @@ app.get('/getNote', function(req, res) {
 	console.log('Otrzymanie żądania GET');
 	fs.readFile('./test.json', 'utf-8', function(err, data) {
 		if (err) throw err;
-		stringifyFile = data;
 		res.send(data);
 	});
 });
